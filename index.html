@@ -34,15 +34,29 @@
 							var phonenum = document.getElementById("entry_name").value;
 							var hashnum = $.md5(phonenum);
 							var havephone = false
+							var num;
 							for (var i = 0; i < 260; ++i) {
-								if(DATA[i]["phone number"]===hashnum)
+								if(DATA[i]["phone number"]===hashnum){
 								havephone = true;
+								num = i;
+								}
 							}
 							console.log(havephone);
 							if(havephone === false){alert("You're not invited!");}
 								else{
-									window.location.href='envelope.html';
-									setTimeout("javascript:location.href='index.html'", 5000);
+									if(DATA[num]["galaxy"]==="玫瑰 Rosa"){
+										window.location.href='rosa.html';
+										setTimeout("javascript:location.href='index.html'", 5000);
+									}else if(DATA[num]["galaxy"]==="薰衣草 Lavandula"){
+										window.location.href='lavandula.html';
+										setTimeout("javascript:location.href='index.html'", 5000);
+									}else if(DATA[num]["galaxy"]==="槲寄生 Viscum"){
+										window.location.href='viscum.html';
+										setTimeout("javascript:location.href='index.html'", 5000);
+									}else{
+										window.location.href='envelope.html';
+										setTimeout("javascript:location.href='index.html'", 5000);
+									}
 								}
 						}
 					</script>
