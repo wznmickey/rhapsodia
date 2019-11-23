@@ -13,9 +13,9 @@ background-color:black;
   }
   
   .envelope {
-    width: 200px;
-    height: 100px;
-    margin: 130px auto 0;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto 0;
     background: #ddd;
     box-shadow: 
       0 0 1px rgba(0,0,0,0.5),
@@ -23,78 +23,11 @@ background-color:black;
     position: center;
     perspective: 800px;
   }
-  .envelope:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 0 solid rgba(0,0,0,0.25);
-    border-width: 45px 100px;
-    border-top-color: transparent;
-    z-index: 2;
-  }
-  
-  .envelope .flap {
-    position: absolute;
-    width: 100%;
-    height: 0;
-    border: 0 solid transparent;
-    border-width: 50px 100px;
-    z-index: 3;
-  }
-  .envelope .flap.front {
-    border-left-color: #eee;
-    border-right-color: #eee;
-    border-bottom-color: #ccc;
-    z-index: 3;
-  }
-  .envelope .flap.front:after {
-    content: '';
-    width: 100%;
-    height: 0;
-    position: absolute;
-    left: -100px;
-    bottom: -50px;
-    border: 0 solid transparent;
-    border-width: 49px 100px;
-    border-bottom-color: #eee;
-  }
-  
-  .envelope .flap.top {
-    border-top-width: 55px;
-    border-top-color: #aaa;
-    z-index: 3;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    -webkit-transform-origin-y: top;
-    transform-origin-y: top;
-    perspective: 800;
-    transform-style: preserve-3d;
-  }
-  .envelope.open .flap.top {
-    animation-name: flip;
-  }
-  .envelope .flap.top:after {
-    content: '';
-    position: absolute;
-    left: -100px; /* border-left-width */
-    top: -55px; /* border-top-width */
-    width: 100%;
-    height: 0;
-    border: 0 solid transparent;
-    border-width: 54px 100px;
-    border-top-color: #eee;
-  }
-  
   .envelope .letter {
     position: absolute;
-    width: 194px;
-    height: 84px;
+    width: 400px;
+    height: 600px;
     background: #fff;
-    top: 8px;
-    left: 3px;
     border: 1px solid #ccc;
     z-index: 1;
     animation-duration: 2s;
@@ -102,14 +35,14 @@ background-color:black;
     animation-fill-mode: forwards;
     transform-style: preserve-3d;
   }
-  .envelope.open .letter {
+  /* .envelope.open .letter {
     animation-name: remove;
-  }
-  .envelope .letter:before,
+  }*/
+  .envelope .letter:before,  
   .envelope .letter:after {
     content: '';
     position: absolute;
-    width: 192px;
+    width: 400px;
     height: 75%;
     left: -1px;
     background: #fff;
