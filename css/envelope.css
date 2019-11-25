@@ -8,68 +8,69 @@ background-color:black;
   }
   
   #wrapper {
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
   }
   
   .envelope {
-    width: 400px;
-    height: 600px;
-    margin: 20px auto 0;
-    background: #ddd;
+    width: 500px;
+    height: 375px;
+    margin: 150px auto 0;
+    background: rgb(0, 0, 0);
     box-shadow: 
-      0 0 1px rgba(0,0,0,0.5),
+      0 0 1px rgba(0, 0, 0, 0.5),
       0 1px 3px rgba(0,0,0,0.25);
     position: center;
     perspective: 800px;
   }
   .envelope .letter {
     position: absolute;
-    width: 400px;
-    height: 600px;
-    background: #fff;
-    border: 1px solid #ccc;
+    left:-1;
+    top:-1;
+    width: 500px;
+    height: 350px;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     z-index: 1;
-    animation-duration: 2s;
-    animation-delay: 1.5s;
     animation-fill-mode: forwards;
     transform-style: preserve-3d;
   }
   /* .envelope.open .letter {
     animation-name: remove;
   }*/
-  .envelope .letter:before,  
-  .envelope .letter:after {
-    content: '';
+  .envelope .before  {
     position: absolute;
-    width: 400px;
-    height: 75%;
-    left: -1px;
-    background: #fff;
-    border: 1px solid #ccc;
-    animation-duration: 1s;
+    width: 500px;
+    height: 52%;
+    background: rgb(255, 255, 255);
+    animation-duration: 3s;
     animation-delay: 4s;
     animation-fill-mode: forwards;
     -webkit-transform-origin-y: top;
+    z-index: 4;
     transform-origin-y: top;
     transform-style: preserve-3d;
     transform: rotateX(10deg);
   }
-  .envelope .letter:before {
-    z-index: 1;
+  .envelope .after {
+    position: absolute;
+    top:375px;
+    width: 500px;
+    height:  52%;
+    background: rgb(255, 255, 255);
+    animation-duration: 3s;
+    animation-delay: 4s;
+    z-index: 3;
+    animation-fill-mode: forwards;
+    -webkit-transform-origin-y: top;
+    transform-origin-y: top;
+    transform-style: preserve-3d;
+    transform: rotateX(170deg);
   }
-  .envelope.open .letter:before {
+  .envelope.open .before {
     animation-name: fold-up;
   }
-  .envelope .letter:after {
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-    -webkit-transform-origin-y: bottom;
-    transform-origin-y: bottom;
-    transform: rotateX(-5deg);
-    bottom: 0;
-  }
-  .envelope.open .letter:after {
+  .envelope.open .after {
     animation-name: fold-down;
   }
   
@@ -94,7 +95,10 @@ background-color:black;
     from {
     }
     to {
-      transform: rotateX(140deg);
+      transform: rotateX(360deg);
+      z-index: -1;
+      left:1px;
+      background: rgb(0, 0, 0);
     }
   }
   
@@ -102,7 +106,10 @@ background-color:black;
     from {
     }
     to {
-      transform: rotateX(-140deg);
+      transform: rotateX(-180deg);
+      z-index: -1;
+      left:1px;
+      background: rgb(0, 0, 0);
     }
   }
   

@@ -18,12 +18,19 @@
   
         
         <div class="envelope open">
-          <div class="letter"><img src="img/maincard.jpg" width="400"  height= "600"></div>
-        </div>
-        
+		  <div class="letter"><img src="img/invitation.jpg" width="502"  height= "352">
+			<script type="text/javascript">
+				var url = location.search;
+				console.log(url[1]);
+				var i = parseInt(url.substring(1), 10);
+				var str = "<font color=white>"+ "姓名："+DATA[i]["name"]+" 星系："+DATA[i]["galaxy"]+" 编号："+DATA[i]["number"]+"</font>";
+				document.write(str);
+				</script>
+		</div>
+		  <div class="before"></div>
+		  <div class="after"></div>
       </div>
     
-
 </body>
 
 </html>

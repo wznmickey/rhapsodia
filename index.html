@@ -44,19 +44,10 @@
 							console.log(havephone);
 							if(havephone === false){alert("You're not invited!");}
 								else{
-									if(DATA[num]["galaxy"]==="玫瑰 Rosa"){
-										window.location.href='rosa.html';
+										window.location.href='envelope.html?'+num;
+
 										setTimeout("javascript:location.href='index.html'", 5000);
-									}else if(DATA[num]["galaxy"]==="薰衣草 Lavandula"){
-										window.location.href='lavandula.html';
-										setTimeout("javascript:location.href='index.html'", 5000);
-									}else if(DATA[num]["galaxy"]==="槲寄生 Viscum"){
-										window.location.href='viscum.html';
-										setTimeout("javascript:location.href='index.html'", 5000);
-									}else{
-										window.location.href='envelope.html';
-										setTimeout("javascript:location.href='index.html'", 5000);
-									}
+									
 								}
 						}
 					</script>
