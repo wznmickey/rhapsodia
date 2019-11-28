@@ -1,122 +1,110 @@
-
-html,body
-{
-background-color:black;
+html,
+body {
+    background-color: black;
 }
+
 * {
     box-sizing: border-box;
-  }
-  
-  #wrapper {
+    font-family: FangSong;
+    font-size: 15px;
+}
+
+#wrapper {
     width: 500px;
     margin: 0 auto;
-  }
-  
-  .envelope {
-    width: 500px;
-    height: 375px;
-    margin: 150px auto 0;
+}
+
+.envelope {
+    width: 365px;
+    height: 280px;
+    margin: 200px 0 0;
     background: rgb(0, 0, 0);
-    box-shadow: 
-      0 0 1px rgba(0, 0, 0, 0.5),
-      0 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.25);
     position: center;
     perspective: 800px;
-  }
-  .envelope .letter {
+}
+
+.envelope .letter {
     position: absolute;
-    left:-1;
-    top:-1;
-    width: 500px;
-    height: 350px;
+    left: -1;
+    top: -1;
+    width: 365px;
+    height: 265px;
     background: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
     z-index: 1;
     animation-fill-mode: forwards;
     transform-style: preserve-3d;
-  }
-  /* .envelope.open .letter {
+}
+
+
+/* .envelope.open .letter {
     animation-name: remove;
   }*/
-  .envelope .before  {
+
+.envelope .before {
     position: absolute;
-    width: 500px;
-    height: 52%;
+    width: 365px;
+    height: 51%;
     background: rgb(255, 255, 255);
     animation-duration: 3s;
-    animation-delay: 4s;
+    animation-delay: 2.4s;
     animation-fill-mode: forwards;
     -webkit-transform-origin-y: top;
     z-index: 4;
     transform-origin-y: top;
     transform-style: preserve-3d;
     transform: rotateX(10deg);
-  }
-  .envelope .after {
+}
+
+.envelope .after {
     position: absolute;
-    top:375px;
-    width: 500px;
-    height:  52%;
+    top: 280px;
+    width: 365px;
+    height: 51%;
     background: rgb(255, 255, 255);
     animation-duration: 3s;
-    animation-delay: 4s;
+    animation-delay: 2.4s;
     z-index: 3;
     animation-fill-mode: forwards;
     -webkit-transform-origin-y: top;
     transform-origin-y: top;
     transform-style: preserve-3d;
     transform: rotateX(170deg);
-  }
-  .envelope.open .before {
+}
+
+.envelope.open .before {
     animation-name: fold-up;
-  }
-  .envelope.open .after {
+}
+
+.envelope.open .after {
     animation-name: fold-down;
-  }
-  
-  @keyframes flip {
-    100% {
-      transform: rotateX(180deg);
-      z-index: 1;
-    }
-  }
-  
-  @keyframes remove {
-    50% {
-      top: -120px;
-    }
-    100% {
-      top: 8px;
-      z-index: 3;
-    }
-  }
-  
-  @keyframes fold-up {
-    from {
-    }
+}
+
+@keyframes fold-up {
+    from {}
     to {
-      transform: rotateX(360deg);
-      z-index: -1;
-      left:1px;
-      background: rgb(0, 0, 0);
+        transform: rotateX(360deg);
+        z-index: -1;
+        left: 1px;
+        background: rgb(0, 0, 0);
     }
-  }
-  
-  @keyframes fold-down {
-    from {
-    }
+}
+
+@keyframes fold-down {
+    from {}
     to {
-      transform: rotateX(-180deg);
-      z-index: -1;
-      left:1px;
-      background: rgb(0, 0, 0);
+        transform: rotateX(-180deg);
+        z-index: -1;
+        left: 1px;
+        background: rgb(0, 0, 0);
     }
-  }
-  
-  #reset:hover {
+}
+
+#reset:hover {
     opacity: 0.8;
-  }
-  #reset:active {
+}
+
+#reset:active {
     background: linear-gradient(#ccc, #eee);
-  }
-  
+}
