@@ -10,6 +10,7 @@ body {
 
 #container {
     width: 500px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     z-index: 999
@@ -31,14 +32,15 @@ body {
 }
 
 .containerT {
-    width: 800px;
-    height: 300px;
     text-align: center;
+    border-radius: 3px;
+    padding: 20px;
     position: absolute;
-    left: 0;
     top: 50%;
-    margin: -150px 0 0 -200px;
-    border-radius: 3px
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 form {
