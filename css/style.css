@@ -1,18 +1,17 @@
 ﻿* {
-    margin: 0;
-    padding: 0;
     font-family: YaHei
 }
 
 html,
 body {
+    box-sizing: border-box;
     background-color: black;
 }
 
 #container {
-    width: 100%;
+    width: 500px;
     height: 100%;
-    margin: 10px auto 0;
+    margin: 0 auto;
     z-index: 999
 }
 
@@ -24,7 +23,6 @@ body {
 .prompt {
     width: 60%;
     height: 30px;
-    margin: 5px auto;
     text-align: center;
     line-height: 30px;
     font-family: microsoft yahei, Arial, sans-serif;

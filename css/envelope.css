@@ -5,7 +5,7 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: FangSong;
+    font-family: YaHei;
     font-size: 15px;
 }
 
@@ -59,7 +59,7 @@ body {
 
 .envelope .after {
     position: absolute;
-    top: 280px;
+    top: 285px;
     width: 365px;
     height: 51%;
     background: rgb(255, 255, 255);
