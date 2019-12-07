@@ -1,5 +1,4 @@
-var DATA = [
-    {
+var DATA = [{
         "number": "1",
         "name": "王恺镔",
         "galaxy": 0,
@@ -698,7 +697,6 @@ var DATA = [
     {
         "number": "117",
         "name": "朱江",
-        "galaxy": 3,
         "phone number": "ed3131d92f5578a96371c1921a728f16"
     },
     {
@@ -1148,19 +1146,16 @@ var DATA = [
     {
         "number": "192",
         "name": "周昱辰",
-        "galaxy": 3,
         "phone number": "e0de553d4ef6edddb0592470fa66f23e"
     },
     {
         "number": "193",
         "name": "李宗昊",
-        "galaxy": 3,
         "phone number": "7676ea7c64abaf934ad040b660f3e906"
     },
     {
         "number": "194",
         "name": "宋依雯",
-        "galaxy": 3,
         "phone number": "63f88fac29ab22ff9151d47d798ac586"
     },
     {
@@ -1183,380 +1178,679 @@ var DATA = [
     },
     {
         "number": "198",
+        "name": "盛天翼",
+        "galaxy": 1,
+        "phone number": "fdd2b6c4ca96573342f89090c35b7112"
+    },
+    {
+        "number": "199",
+        "name": "郑晨浩",
+        "galaxy": 1,
+        "phone number": "41d781d4453a0bd4c9b23f547b7f2da2"
+    },
+    {
+        "number": "200",
+        "name": "高煜林",
+        "galaxy": 3,
+        "phone number": "2d22b5e6d7730f8c9b352cbde25da1b1"
+    },
+    {
+        "number": "201",
+        "name": "姜劭澎",
+        "galaxy": 2,
+        "phone number": "01da13c81333b02077d6e3c9e3059ed9"
+    },
+    {
+        "number": "202",
+        "name": "杜伊琳",
+        "galaxy": 2,
+        "phone number": "222f2fe88ea48bf6d791c29c4097ad07"
+    },
+    {
+        "number": "203",
+        "name": "王嘉君",
+        "galaxy": 3,
+        "phone number": "9bbd34c68f6214f14501656afadd1abb"
+    },
+    {
+        "number": "204",
+        "name": "陈济宇",
+        "galaxy": 3,
+        "phone number": "bfaf3263732d005feb4085473731ec67"
+    },
+    {
+        "number": "205",
+        "name": "张瀚文",
+        "galaxy": 1,
+        "phone number": "199436da46bae71d60384bbd4a18c259"
+    },
+    {
+        "number": "206",
+        "name": "余应卓",
+        "galaxy": 1,
+        "phone number": "0b91b8f951b122ebbd46bfd2aa8a4fe3"
+    },
+    {
+        "number": "207",
+        "name": "史金卓",
+        "phone number": "7fcbf8f3143cb304a88d8796ac6bce3c"
+    },
+    {
+        "number": "208",
+        "name": "朱世纪",
+        "galaxy": 2,
+        "phone number": "b7e881acf2aa778251eaef5f293e9b96"
+    },
+    {
+        "number": "209",
+        "name": "吴谈瑞",
+        "phone number": "2514badac200bb87cf3316934a20595d"
+    },
+    {
+        "number": "210",
+        "name": "孔思原",
+        "galaxy": 2,
+        "phone number": "3e9b0290de27a62aa8dd38b738d66e52"
+    },
+    {
+        "number": "211",
+        "name": "谢颐初",
+        "phone number": "7edf54bd5d1f9b2568d1d3b13176a319"
+    },
+    {
+        "number": "212",
+        "name": "叶昊霖",
+        "galaxy": 1,
+        "phone number": "b39a82cfdfafb6aa2c6df821fbc6dc57"
+    },
+    {
+        "number": "213",
+        "name": "俞洋",
+        "galaxy": 2,
+        "phone number": "c2991fed83df49c3561f45bab07154c0"
+    },
+    {
+        "number": "214",
+        "name": "朱浩粼",
+        "galaxy": 1,
+        "phone number": "f092f051781276cb4c9151e084924214"
+    },
+    {
+        "number": "215",
+        "name": "宋世欣",
+        "phone number": "d1deaa04df14c88916e2e17cf4d53cd4"
+    },
+    {
+        "number": "216",
+        "name": "刘逸灏",
+        "phone number": "7be8290b75f0cd8b9e8f8d223342d51d"
+    },
+    {
+        "number": "217",
+        "name": "黄皓俞",
+        "galaxy": 1,
+        "phone number": "9159fd971c35b2e8cedce60fa7027e33"
+    },
+    {
+        "number": "218",
+        "name": "周岭修亭",
+        "galaxy": 1,
+        "phone number": "7f0b83fa6c97bc67507ab32aa1a39f27"
+    },
+    {
+        "number": "219",
+        "name": "卢天宇",
+        "galaxy": 2,
+        "phone number": "a87e293808688ea38876345118669182"
+    },
+    {
+        "number": "220",
+        "name": "董于琪",
+        "galaxy": 2,
+        "phone number": "934a8fb08286685955e5a8f7e0d96563"
+    },
+    {
+        "number": "221",
+        "name": "许愿",
+        "galaxy": 3,
+        "phone number": "0a602220d81060697da1e6399b01be94"
+    },
+    {
+        "number": "222",
+        "name": "吴宇豪",
+        "galaxy": 3,
+        "phone number": "6ad850f756f9609e44e7829b1ca0cf77"
+    },
+    {
+        "number": "223",
+        "name": "陈康睿",
+        "galaxy": 3,
+        "phone number": "76f295587031b38f6efaccb870e5e063"
+    },
+    {
+        "number": "224",
+        "name": "麻珂睿",
+        "galaxy": 3,
+        "phone number": "f60900bc1432353fc59f0a027d7b5a33"
+    },
+    {
+        "number": "225",
+        "name": "吕天羽",
+        "galaxy": 3,
+        "phone number": "fd7f67056128f576679f290f129292d5"
+    },
+    {
+        "number": "226",
+        "name": "王旖璐",
+        "galaxy": 3,
+        "phone number": "811bd444422d2872ae33f50b8833cd62"
+    },
+    {
+        "number": "227",
+        "name": "潘子瑄",
+        "galaxy": 1,
+        "phone number": "3e72c2606008254fbc58923d25055fd5"
+    },
+    {
+        "number": "228",
+        "name": "李静泊",
+        "galaxy": 3,
+        "phone number": "638bb4a29f75602ac55180b7790bd82a"
+    },
+    {
+        "number": "229",
+        "name": "徐飞扬",
+        "galaxy": 3,
+        "phone number": "1a0c30cd8a94627ef2e55c5e04b1a49a"
+    },
+    {
+        "number": "230",
+        "name": "靳淏然",
+        "galaxy": 3,
+        "phone number": "b9106829e3c5cc461756464f49bf390c"
+    },
+    {
+        "number": "231",
+        "name": "高景南",
+        "galaxy": 3,
+        "phone number": "54a3661296ed386bb90bbb0d73ec7f6e"
+    },
+    {
+        "number": "232",
+        "name": "李睿",
+        "galaxy": 1,
+        "phone number": "57b2bedd8a990e581d20475d1e94a304"
+    },
+    {
+        "number": "233",
+        "name": "黄赟",
+        "galaxy": 1,
+        "phone number": "c3fdefc398e80faef12443853c3f5c9f"
+    },
+    {
+        "number": "234",
+        "name": "林欣芸",
+        "phone number": "d40d64c9c9f58847c2f0e1202a56e05a"
+    },
+    {
+        "number": "235",
         "name": "周全",
         "galaxy": 3,
         "phone number": "9892aec740f5074c00a72e4901568b32"
     },
     {
-        "number": "199",
+        "number": "236",
         "name": "丁雅婷/Angelina",
         "galaxy": 1,
         "phone number": "033f23da653b9b377b5e3adaa003ff05"
     },
     {
-        "number": "200",
+        "number": "237",
         "name": "傅文静",
         "galaxy": 3,
         "phone number": "46af31f6513abb4482864a249bc3ead8"
     },
     {
-        "number": "201",
+        "number": "238",
         "name": "丁瑞潼",
         "galaxy": 3,
         "phone number": "e4250dfd7138da71dd6c6854e3ead227"
     },
     {
-        "number": "202",
+        "number": "239",
         "name": "欧阳江影",
         "galaxy": 2,
         "phone number": "e297f9b23cda9bcdfa7fc6c12d3ab886"
     },
     {
-        "number": "203",
+        "number": "240",
         "name": "焦蕾月",
         "galaxy": 1,
         "phone number": "6f1bc81478a088ebaff010bf79bb15a3"
     },
     {
-        "number": "204",
+        "number": "241",
         "name": "何泽洋",
         "galaxy": 2,
         "phone number": "cb2373fd4c8942f7cb2c27f5a3b944d6"
     },
     {
-        "number": "205",
+        "number": "242",
         "name": "叶姝蝶",
         "galaxy": 3,
         "phone number": "efee8ddbd694c1b81c756050420a5a20"
     },
     {
-        "number": "206",
+        "number": "243",
         "name": "金皓月",
         "galaxy": 3,
         "phone number": "aef7df7cdeacc2ffd1d624d2a0d8ac79"
     },
     {
-        "number": "207",
+        "number": "244",
         "name": "蒋和怡",
         "galaxy": 1,
         "phone number": "e54383d1a23d5e55496c0be88c45a0e3"
     },
     {
-        "number": "208",
+        "number": "245",
         "name": "劳拉",
         "galaxy": 3,
         "phone number": "329e2de4b7985245cdc3666011cf9f87"
     },
     {
-        "number": "209",
+        "number": "246",
         "name": "奚嘉璐",
         "galaxy": 2,
         "phone number": "2b9b34c5a0e8e268f8402b6fb8316031"
     },
     {
-        "number": "210",
+        "number": "247",
         "name": "于漫芃",
         "galaxy": 1,
         "phone number": "c846f7eb109ecc82b87c4dda8557d2ba"
     },
     {
-        "number": "211",
+        "number": "248",
         "name": "李梦媛",
         "galaxy": 2,
         "phone number": "0a91fd293019fec7e137f64b746e4077"
     },
     {
-        "number": "212",
+        "number": "249",
         "name": "钱璟洁",
         "galaxy": 1,
         "phone number": "398b3d173b72b7d010995e0da344bdf9"
     },
     {
-        "number": "213",
+        "number": "250",
         "name": "雷佳妮",
         "galaxy": 2,
         "phone number": "7c8c4b23c4d21fb76c69bf4ddfb6ccf0"
     },
     {
-        "number": "214",
+        "number": "251",
         "name": "钟睿蓓",
         "galaxy": 3,
         "phone number": "22d7e0c7a1300d2dfdab0aa32c66b70f"
     },
     {
-        "number": "215",
+        "number": "252",
         "name": "陈明瑞",
         "galaxy": 3,
         "phone number": "bca258a108ba391cecb1597b8da69dae"
     },
     {
-        "number": "216",
+        "number": "253",
         "name": "董依凌子",
         "galaxy": 3,
         "phone number": "c0a5e4aaa056e1212c05ff13d3508f1d"
     },
     {
-        "number": "217",
+        "number": "254",
         "name": "撒依旦",
         "galaxy": 0,
         "phone number": "9783e9d94843d893617f4af6e1791b56"
     },
     {
-        "number": "218",
+        "number": "255",
         "name": "赵燊",
         "galaxy": 0,
         "phone number": "0bf2e2cd116c18b2485c3093c7b83ece"
     },
     {
-        "number": "219",
+        "number": "256",
         "name": "王锦",
         "galaxy": 0,
         "phone number": "e1fe0fdd0ccb0092e805985b0e92e4d8"
     },
     {
-        "number": "220",
+        "number": "257",
         "name": "方陈全有",
         "galaxy": 0,
         "phone number": "581e04f8268ef5a377d083e6b235f115"
     },
     {
-        "number": "221",
+        "number": "258",
+        "name": "李俊霖",
+        "galaxy": 3,
+        "phone number": "c4b244ac626377cbc383f81ec57dd88f"
+    },
+    {
+        "number": "259",
+        "name": "汪雅琦",
+        "galaxy": 1,
+        "phone number": "de735ad6b1649c6efa3149a2fc2851f8"
+    },
+    {
+        "number": "260",
+        "name": "姚蕙怡",
+        "galaxy": 1,
+        "phone number": "6e1e8f6b3542cc4ed6b09108495ede5e"
+    },
+    {
+        "number": "261",
         "name": "王汝文",
         "galaxy": 2,
         "phone number": "d898d40fca2b755ca570df0dd88dc1b6"
     },
     {
-        "number": "222",
+        "number": "262",
         "name": "王心怡",
         "galaxy": 2,
         "phone number": "333b53017a0a9df0e4c2faf44f5e0060"
     },
     {
-        "number": "223",
+        "number": "263",
         "name": "吴烁",
         "galaxy": 2,
         "phone number": "3a8a4b4726ace61e3307c2ad5d480a72"
     },
     {
-        "number": "224",
+        "number": "264",
         "name": "旷皓月",
         "galaxy": 1,
         "phone number": "2404fea461248c41f3d6b0e99b361078"
     },
     {
-        "number": "225",
+        "number": "265",
         "name": "魏佳希",
         "galaxy": 2,
         "phone number": "286c40c8ea2a73c985042ed4e7c6b5a1"
     },
     {
-        "number": "226",
+        "number": "266",
         "name": "陈梦洁",
         "galaxy": 3,
         "phone number": "a8987d52cc03224508bcafba6583651b"
     },
     {
-        "number": "227",
+        "number": "267",
         "name": "朱钰滢",
         "galaxy": 1,
         "phone number": "ef656dcee2a7e6aef6e026b0a3f310f5"
     },
     {
-        "number": "228",
+        "number": "268",
         "name": "贾艺桦",
         "galaxy": 1,
         "phone number": "0d50b88d4b95382d4f8f7cb1715c2117"
     },
     {
-        "number": "229",
+        "number": "269",
         "name": "张泰龄",
         "galaxy": 2,
         "phone number": "c81ea096dfbef95c454de7287e4e68d0"
     },
     {
-        "number": "230",
+        "number": "270",
         "name": "朱琰莹",
         "galaxy": 3,
         "phone number": "6300453987a07d170a95d7b5e5ece37c"
     },
     {
-        "number": "231",
+        "number": "271",
         "name": "程诺",
         "galaxy": 2,
         "phone number": "65f54740cfd6038419f844fb9d30becc"
     },
     {
-        "number": "232",
+        "number": "272",
         "name": "倪泓",
         "galaxy": 2,
         "phone number": "61a2fce79aafdffdfccf71aa35c5adc4"
     },
     {
-        "number": "233",
+        "number": "273",
         "name": "程诗瑶",
         "galaxy": 1,
         "phone number": "c36c2cf1d2c0d607552d219406a91683"
     },
     {
-        "number": "234",
+        "number": "274",
         "name": "黄晓琪",
         "galaxy": 2,
         "phone number": "c9ab7ce72b762085de7b187269d1cbd2"
     },
     {
-        "number": "235",
+        "number": "275",
         "name": "郑喻心",
         "galaxy": 3,
         "phone number": "919b12584fb7e79526d326a103551b85"
     },
     {
-        "number": "236",
+        "number": "276",
         "name": "黄炜芯",
         "galaxy": 1,
         "phone number": "e9ae46d950109467f707c97c398b8334"
     },
     {
-        "number": "237",
+        "number": "277",
         "name": "黄舒曼",
         "galaxy": 3,
         "phone number": "f1e58b9051fb201ed3267243956aa4e9"
     },
     {
-        "number": "238",
+        "number": "278",
         "name": "章韵楟",
         "galaxy": 2,
         "phone number": "42f3f299e7d9b38e16a41056f32aa830"
     },
     {
-        "number": "239",
+        "number": "279",
         "name": "许雯",
         "galaxy": 2,
         "phone number": "79b048b699ce0b3d9e025ca3271881eb"
     },
     {
-        "number": "240",
+        "number": "280",
         "name": "陈卓然",
         "galaxy": 1,
         "phone number": "c27bac430e8fc2ff00ac968dc1ebcc84"
     },
     {
-        "number": "241",
+        "number": "281",
         "name": "徐馨仪",
         "galaxy": 1,
         "phone number": "e79904ac78564c642cad4021b1258398"
     },
     {
-        "number": "242",
+        "number": "282",
         "name": "沈欣怡",
         "galaxy": 0,
         "phone number": "e34d43cc54685cafb5e4a2647d8f1d66"
     },
     {
-        "number": "243",
+        "number": "283",
         "name": "苏佩雯",
         "galaxy": 0,
         "phone number": "029e9ddcd3b3876c9848be7b8ca2c944"
     },
     {
-        "number": "244",
+        "number": "284",
         "name": "罗子慧",
         "galaxy": 0,
         "phone number": "b2e7b29d0190e61bbf8327464820d29f"
     },
     {
-        "number": "245",
+        "number": "285",
         "name": "山宸宸",
         "galaxy": 0,
         "phone number": "da5bf5f91da849dead9c9319029f4f20"
     },
     {
-        "number": "246",
+        "number": "286",
         "name": "庞贝宁",
         "galaxy": 1,
         "phone number": "7ae84528ffbb30cc0571f80cf2236501"
     },
     {
-        "number": "247",
+        "number": "287",
         "name": "贾卓楠",
         "galaxy": 1,
         "phone number": "d13e959c6f644b45a04f7cc03ecde2e2"
     },
     {
-        "number": "248",
+        "number": "288",
         "name": "陆妤雯",
         "galaxy": 1,
         "phone number": "686067ac46e3a8efa0b6792623c415a4"
     },
     {
-        "number": "249",
+        "number": "289",
         "name": "叶雨欣",
         "galaxy": 3,
         "phone number": "e65aac37368a3a9d5931ba4355a708b6"
     },
     {
-        "number": "250",
+        "number": "290",
         "name": "杨蔚彧",
         "galaxy": 2,
         "phone number": "f8b9a04c7cabaa4e8603c2e00c5418b9"
     },
     {
-        "number": "251",
+        "number": "291",
         "name": "徐凡力",
         "galaxy": 3,
         "phone number": "824de96e02ef43037ab048424bcc79f7"
     },
     {
-        "number": "252",
+        "number": "292",
         "name": "金珉志",
         "galaxy": 3,
         "phone number": "3ae91d01405883d360cbb9badc7ff0af"
     },
     {
-        "number": "253",
+        "number": "293",
         "name": "娄楚楚",
         "galaxy": 2,
         "phone number": "a7e25678fb220e42f5b12a757dfaa0c4"
     },
     {
-        "number": "254",
+        "number": "294",
         "name": "李娥仁",
-        "galaxy": 3,
         "phone number": "d805db026fb7b47b79aa1834505d640a"
     },
     {
-        "number": "255",
+        "number": "295",
         "name": "徐沈玮",
-        "galaxy": 3,
         "phone number": "603ce87ae6155b2a17bdf02ef7ba8d6f"
     },
     {
-        "number": "256",
+        "number": "296",
         "name": "邢致远",
         "galaxy": 2,
         "phone number": "c9b7f3bffe91d3789a244073d1355254"
     },
     {
-        "number": "257",
+        "number": "297",
         "name": "杜萌萌",
         "galaxy": 3,
         "phone number": "47a6a06c212a7ad31e16f3c8793fa96f"
     },
     {
-        "number": "258",
+        "number": "298",
         "name": "马雪莹",
         "galaxy": 2,
         "phone number": "a401d00dee504610426d6e1b77b1a4ce"
     },
     {
-        "number": "259",
+        "number": "299",
         "name": "王阳",
         "galaxy": 2,
         "phone number": "9c5af226a93c06af62dbcf5c96b3ac7d"
     },
     {
-        "number": "260",
+        "number": "300",
         "name": "李啸",
         "galaxy": 2,
         "phone number": "f057e9b7c30e8b06f77e30cfc0365d44"
+    },
+    {
+        "number": "301",
+        "name": "祝馨怡",
+        "galaxy": 1,
+        "phone number": "3f83933c3c62f4f7453c55afbc197dc9"
+    },
+    {
+        "number": "302",
+        "name": "汪颖颖",
+        "galaxy": 1,
+        "phone number": "bc00da04935146c436feb6c620b0811e"
+    },
+    {
+        "number": "303",
+        "name": "蔡屹婕",
+        "galaxy": 1,
+        "phone number": "b614bae731067014b82f69f86cd2ecac"
+    },
+    {
+        "number": "304",
+        "name": "骆雨农",
+        "galaxy": 1,
+        "phone number": "95bf9e476f95f9574a30cb6f1078ee06"
+    },
+    {
+        "number": "305",
+        "name": "谢飞",
+        "galaxy": 1,
+        "phone number": "6b2fb6237cb47ba59cb253c6b8df9523"
+    },
+    {
+        "number": "306",
+        "name": "乐斌彬",
+        "phone number": "b2fdca536b67b2c0c30856b9f0f5f0ce"
+    },
+    {
+        "number": "307",
+        "name": "龚雅慧",
+        "phone number": "03bd14ece1aac55c7831f9d5e2f312ce"
+    },
+    {
+        "number": "308",
+        "name": "沈依沁",
+        "galaxy": 1,
+        "phone number": "0f8f3de096f961504df09d437ef1ed61"
+    },
+    {
+        "number": "309",
+        "name": "Linda Foerster",
+        "phone number": "da63da3f710d382eb2d2d8aa9630c9bb"
+    },
+    {
+        "number": "310",
+        "name": "龚步云",
+        "phone number": "3c56ecf289ea96b36ad56afa95f788f5"
+    },
+    {
+        "number": "311",
+        "name": "姜婷萱",
+        "galaxy": 1,
+        "phone number": "70a4bae98214112e45f1b89ddac42451"
+    },
+    {
+        "number": "312",
+        "name": "上官子莹",
+        "phone number": "a42bd86a48e235f83dd3f517735904a1"
     }
 ]
