@@ -34,7 +34,7 @@
 			var phonenum = document.getElementById("entry_name").value;
 			var hashnum = $.md5(phonenum);
 			if (hashnum !== null || hashnum !== undefined || hashnum !== '') {
-				window.location.href = 'envelope.html?' + hashnum;
+				window.location.href = 'envelope.html?hashnum=' + hashnum;
 			}
 		}
 
