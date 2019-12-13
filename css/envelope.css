@@ -5,7 +5,7 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: YaHei;
+    font: 20px/1.5em "Microsoft YaHei";
     font-size: 15px;
 }
 
