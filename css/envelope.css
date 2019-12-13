@@ -18,7 +18,7 @@ body {
 .envelope {
     width: 365px;
     height: 280px;
-    margin: 200px 0 0;
+    /* margin: 200px 0 0; */
     background: rgb(0, 0, 0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.25);
     position: center;
@@ -90,6 +90,7 @@ body {
         z-index: -1;
         left: 1px;
         background: rgb(0, 0, 0);
+        visibility: hidden;
     }
 }
 
@@ -100,6 +101,7 @@ body {
         z-index: -1;
         left: 1px;
         background: rgb(0, 0, 0);
+        visibility: hidden;
     }
 }
 
@@ -140,9 +142,9 @@ body {
     background-size: 360px 265px;
 }
 
-.card:hover {
+/* .card:hover {
     transform: rotateY(180deg);
-}
+} */
 
 .text {
     color: #bf8c51;

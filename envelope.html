@@ -10,53 +10,61 @@
     <link rel="stylesheet" type="text/css" href="css/envelope.css">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/envelope.js"></script>
     <script type="text/javascript" src="js/datab.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
-        <div class="envelope open">
+        <img src="img/title.png" class="vcenter" style="margin-top: -220px;" height="42" width="200">
+        <div class="envelope open vcenter">
             <div class="card">
                 <div class="front">
-                    <img src="img/invitation.jpg" width="360" height="265">
-                </div>
-                <div class="back">
                     <div class="vcenter">
                         <p class="text"></p>
                         <p class="text"></p>
                         <p class="text"></p>
                     </div>
+                    <img src="img/card.jpg" width="360" height="265">
                 </div>
+                <!-- <div class="back">
+                </div> -->
             </div>
             <div class="before"><img src="img/coverup.jpg" height="146" width="365"></div>
             <div class="after"><img src="img/coverdown1.jpg" height="145" width="365"></div>
         </div>
-
-        <script type="text/javascript">
-            var galaxy = {
-                0: "工作人员",
-                1: "薰衣草<br/>Lavandula",
-                2: "槲寄生<br/>Viscum",
-                3: "玫瑰<br/>Rosa"
+        <div class="vcenter" style="margin-top: 220px; z-index: -99">
+            <p class="text">
+                12/15 周日 17:30pm
+            </p>
+            <p class="text">
+                上海华东师范大学学生活动中心舞厅
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var galaxy = {
+            0: "工作人员",
+            1: "薰衣草<br/>Lavandula",
+            2: "槲寄生<br/>Viscum",
+            3: "玫瑰<br/>Rosa"
+        }
+        var hashnum = location.search.slice(1);
+        var isValid = false;
+        for (var i = 0; i < DATA.length; ++i) {
+            if (DATA[i]["phone number"] === hashnum) {
+                document.getElementsByClassName("text")[0].innerHTML = "姓名：" + DATA[i]["name"];
+                document.getElementsByClassName("text")[1].innerHTML = "星系：" + galaxy[DATA[i]["galaxy"]];
+                document.getElementsByClassName("text")[2].innerHTML = "编号：" + DATA[i]["number"];
+                isValid = true;
+                break;
             }
-            var hashnum = location.search.slice(1);
-            var isValid = false;
-            for (var i = 0; i < DATA.length; ++i) {
-                if (DATA[i]["phone number"] === hashnum) {
-                    document.getElementsByClassName("text")[0].innerHTML = "姓名：" + DATA[i]["name"];
-                    document.getElementsByClassName("text")[1].innerHTML = "星系：" + galaxy[DATA[i]["galaxy"]];
-                    document.getElementsByClassName("text")[2].innerHTML = "编号：" + DATA[i]["number"];
-                    isValid = true;
-                    break;
-                }
-            }
-            if (!isValid) {
-                document.getElementsByClassName("text")[0].innerHTML = "非常抱歉，";
-                document.getElementsByClassName("text")[1].innerHTML = "您没有被邀请，";
-                document.getElementsByClassName("text")[2].innerHTML = "期待与您的相见！";
-            }
-        </script>
+        }
+        if (!isValid) {
+            document.getElementsByClassName("text")[0].innerHTML = "非常抱歉，";
+            document.getElementsByClassName("text")[1].innerHTML = "您没有被邀请，";
+            document.getElementsByClassName("text")[2].innerHTML = "期待与您的相见！";
+        }
+    </script>
 </body>
 
 </html>

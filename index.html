@@ -33,7 +33,14 @@
 		function check() {
 			var phonenum = document.getElementById("entry_name").value;
 			var hashnum = $.md5(phonenum);
-			window.location.href = 'envelope.html?' + hashnum;
+			if (hashnum !== null || hashnum !== undefined || hashnum !== '') {
+				window.location.href = 'envelope.html?' + hashnum;
+			}
+		}
+
+		function enterConfirm() {
+			if (event.keyCode == 13)
+				check()
 		}
 	</script>
 </body>
