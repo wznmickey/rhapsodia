@@ -53,18 +53,11 @@
             }
             return (false);
         }
-        var galaxy = {
-            0: "工作人员",
-            1: "薰衣草<br/>Lavandula",
-            2: "槲寄生<br/>Viscum",
-            3: "玫瑰<br/>Rosa"
-        }
         var hashnum = getQueryVariable("hashnum");
         var isValid = false;
         for (var i = 0; i < DATA.length; ++i) {
             if (DATA[i]["phone number"] === hashnum) {
                 document.getElementsByClassName("text")[0].innerHTML = "姓名：" + DATA[i]["name"];
-                document.getElementsByClassName("text")[1].innerHTML = "星系：" + galaxy[DATA[i]["galaxy"]];
                 document.getElementsByClassName("text")[2].innerHTML = "编号：" + DATA[i]["number"];
                 isValid = true;
                 break;
