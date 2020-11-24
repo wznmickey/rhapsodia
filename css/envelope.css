@@ -1,4 +1,74 @@
-html,
+html
 body {
     background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    font: 20px/1.5em "Microsoft YaHei";
+    font-size: 15px;
+}
+.open_card{
+    width: 500px;
+    perspective: 2000px;
+}
+.cardpage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card__face__abs {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.card__rotate__face--back {
+    transform: rotateY(180deg);
+}
+.cardpage.is-fliped {
+    transform: rotateY(180deg)
+}
+.wrapper--card {
+    width: 100px;
+    height: 140px;
+    perspective: 500px;
+}
+
+.text {
+    color: #bf8c51;
+    font: 20px/1.5em "Microsoft YaHei";
+}
+.vcenter {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.envelope {
+    width: 365px;
+    height: 280px;
+    /* margin: 200px 0 0; */
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.25);
+    position: center;
+    perspective: 800px;
+}
+
+.envelope .letter {
+    /* position: absolute; */
+    left: -1;
+    top: -1;
+    width: 365px;
+    height: 265px;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 1;
+    animation-fill-mode: forwards;
+    transform-style: preserve-3d;
 }
