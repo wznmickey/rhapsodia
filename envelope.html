@@ -29,13 +29,16 @@
                 </div> -->
             </div>
         </div>
-        <div class="open_card vcenter">
-            <div class="cardpage" onclick="flip()" id="card" width-max="100%">
-                <div class="card card__face__abs card__face--front"><img src="img/page.png" class="imgcard" ></div>
-                <div class="card card__face__abs card__face--back card__rotate__face--back"><img src="img/inside.png" class="imgcard"></div>
+    </div>
+    <div class="open_card vcenter">
+        <div class="cardpage" onclick="flip()" id="card" width-max="90%" margin-left=“auto” margin-right=“auto”
+            display=“block”>
+            <div class="card card__face__abs card__face--front"><img src="img/page.png" class="imgcard" id="img1"
+                    max-height="1000px">
             </div>
+            <div class="card card__face__abs card__face--back card__rotate__face--back"><img src="img/inside.png"
+                    id="img2" class="imgcard" max-height="1000px"></div>
         </div>
-
     </div>
     <div class="vcenter" style="margin-top: 220px; z-index: -99">
         <p class="text">
@@ -47,6 +50,10 @@
     </div>
     </div>
     <script type="text/javascript">
+        //$(document).ready(function () {
+        if (document.body.clientWidth<=500) document.getElementById("img1").style.height = document.body.clientWidth / 2835 * 1890 + "px";
+        if (document.body.clientWidth<=500) document.getElementById("img2").style.height = document.body.clientWidth / 2835 * 1890 + "px";
+        //});
         function flip() {
             //alert(1);
             document.getElementById("card").className = "cardpage is-fliped";
@@ -77,6 +84,7 @@
             document.getElementsByClassName("text")[1].innerHTML = "您没有被邀请，";
             document.getElementsByClassName("text")[2].innerHTML = "期待与您的相见！";
         }
+
     </script>
 </body>
 

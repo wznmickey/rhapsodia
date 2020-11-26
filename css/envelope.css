@@ -19,18 +19,18 @@ body {
     transform-style: preserve-3d;
 }
 .imgcard{
-    height: 300px;
+    height: 350px;
 }
 @media(max-width: 900px)
 {
     .imgcard{
-        height: 150px;
+        height: 300px;
     }
 }
-@media(max-width: 450px)
+@media(max-width: 750px)
 {
     .imgcard{
-        height: 100px;
+        height: 250px;
     }
 }
 .card__face__abs {
