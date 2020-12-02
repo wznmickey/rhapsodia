@@ -1,6 +1,7 @@
 html
 body {
-    background-color: black;
+    background-image: url("../img/background.jpg");
+    background-size: 100%;
 }
 
 * {
