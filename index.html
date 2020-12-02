@@ -25,7 +25,8 @@
 					<div id="input_phone"
 						style="position:absolute; z-index:2; top:50% ;transform: translate(-50% -50%);">
 						<form class="form" id="entry_form" onsubmit="return false;">
-							<input placeholder="输入手机号" id="entry_name" value="" onkeydown="enterConfirm()">
+							<input placeholder="输入手机号" id="entry_name" value="" onkeydown="enterConfirm()"
+								onBlur="change_lo() " onFocus="change_lo()">
 							<button type="button" id="entry_btn" onclick="check()"
 								style="background-color: rgba(0,0,0,0);">确认</button>
 							<div id="prompt" class="prompt"></div>
@@ -38,9 +39,10 @@
 	</div>
 	<script type="text/javascript">
 		$(window).on('load', function () {
-			if (document.body.clientWidth<900) document.getElementById("phonebg").style.width=document.body.clientWidth+"px";
+			if (document.body.clientWidth < 900) document.getElementById("phonebg").style.width = document.body.clientWidth + "px";
 			document.getElementById("input_phone").style.left = (document.body.clientWidth / 2 - document.getElementById("input_phone").offsetWidth / 2 - (document.body.clientWidth - document.getElementById("phonebg").clientWidth) / 2) + "px";
 		});
+
 		function check() {
 			var phonenum = document.getElementById("entry_name").value;
 			var hashnum = $.md5(phonenum);
@@ -49,9 +51,17 @@
 			}
 		}
 		function enterConfirm() {
+			document.getElementById("input_phone").style.left = (document.body.clientWidth / 2 - document.getElementById("input_phone").offsetWidth / 2 - (document.body.clientWidth - document.getElementById("phonebg").clientWidth) / 2) + "px";
 			if (event.keyCode == 13) {
 				check();
 			}
+
+		}
+		function change_lo() {
+			setTimeout(function () {
+				document.getElementById("input_phone").style.left = (document.body.clientWidth / 2 - document.getElementById("input_phone").offsetWidth / 2 - (document.body.clientWidth - document.getElementById("phonebg").clientWidth) / 2) + "px";
+			}, 100)
+
 
 		}
 	</script>
