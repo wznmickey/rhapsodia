@@ -4,9 +4,8 @@
 
 html,
 body {
-    
-    box-sizing: border-box;
-    background-color: black;
+    background-image: url("../img/phonebackground.jpg");
+    background-size: 100%;
 }
 
 #container {
@@ -43,7 +42,6 @@ body {
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
 form {
     padding: 20px 0;
     position: relative;
