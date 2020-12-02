@@ -33,14 +33,14 @@
 							<div id="prompt" class="prompt"></div>
 						</form>
 					</div>
-					<img src="img/phonebackground.jpg"  width="70%" id="phonephoto"></img>
+					<img src="img/phonebackground.jpg" width="70%" id="phonephoto"></img>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
 		$(window).on('load', function () {
-			if (document.body.clientWidth < 1100) {document.getElementById("phonebg").style.width = document.body.clientWidth + "px";document.getElementById("phonephoto").style.width = document.body.clientWidth + "px";}
+			if (document.body.clientWidth < 1100) { document.getElementById("phonebg").style.width = document.body.clientWidth + "px"; document.getElementById("phonephoto").style.width = document.body.clientWidth + "px"; }
 			document.getElementById("input_phone").style.left = (document.body.clientWidth / 2 - document.getElementById("input_phone").offsetWidth / 2 - (document.body.clientWidth - document.getElementById("phonebg").clientWidth) / 2) + "px";
 		});
 
