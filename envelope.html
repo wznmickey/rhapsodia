@@ -28,7 +28,12 @@
         if (document.body.clientWidth <= 500) document.getElementById("img1").style.width = document.body.clientWidth * 0.9 + "px";
         if (document.body.clientWidth <= 500) document.getElementById("img2").style.width = document.body.clientWidth * 0.9 + "px";
         function flip() {
-            document.getElementById("card").className = "cardpage is-fliped";
+            if (document.getElementById("card").className == "cardpage") {
+                document.getElementById("card").className = "cardpage is-fliped";
+            }
+            else {
+                document.getElementById("card").className = "cardpage";
+            }
         }
     </script>
 </body>
