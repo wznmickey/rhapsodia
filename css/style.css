@@ -1,5 +1,5 @@
 ﻿* {
-    font-family: YaHei
+    font-family: microsoft yahei, Arial, sans-serif
 }
 
 html,
@@ -30,7 +30,7 @@ body {
     text-align: center;
     line-height: 30px;
     font-family: microsoft yahei, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: #df0000
 }
 
@@ -97,7 +97,7 @@ form button {
     cursor: pointer;
     font-family: microsoft yahei, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 300;
     -webkit-transition-duration: .25s;
     transition-duration: .25s
 }
