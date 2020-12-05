@@ -63,7 +63,7 @@ body {
 
 .text {
     color: #000000;
-    font: 14px/1.5em "required";
+    font: 16px/1.5em "required";
 }
 .vcenter {
     text-align: center;
@@ -82,6 +82,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 85%;
 }
 .envelope {
     width: 365px;
