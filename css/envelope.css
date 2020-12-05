@@ -35,8 +35,8 @@ body {
     }
 }
 @font-face {
-    font-family:required;
-    src:url("font/HanyiSentyTang.tff")；
+    font-family: HanyiSentyTang;
+    src: url("../font/HanyiSentyTang.ttf");
 }
 .card__face__abs {
     position: absolute;
@@ -63,7 +63,7 @@ body {
 
 .text {
     color: #000000;
-    font: 20px/1.5em "required";
+    font: 20px/1.5em "HanyiSentyTang";
 }
 .vcenter {
     text-align: center;
