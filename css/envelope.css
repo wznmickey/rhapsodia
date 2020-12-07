@@ -36,7 +36,7 @@ body {
 }
 @font-face {
     font-family: HanyiSentyTang;
-    src: url("../font/HanyiSentyTang.ttf");
+    src: url("../font/mini.ttf");
 }
 .card__face__abs {
     position: absolute;
