@@ -62,8 +62,10 @@ body {
 }
 
 .text {
+    text-align: left;
     color: #000000;
-    font: 20px/1.5em "HanyiSentyTang";
+    font: 30px/1em "HanyiSentyTang";
+
 }
 .vcenter {
     text-align: center;
@@ -78,11 +80,12 @@ body {
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 52.5%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 85%;
+    text-indent:4em
 }
 .envelope {
     width: 365px;
