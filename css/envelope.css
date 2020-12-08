@@ -126,12 +126,12 @@ body {
     .lucktext {
         text-align: left;
         color: #000000;
-        font: 22px/1em "HanyiSentyTang";
+        font: 20px/1em "HanyiSentyTang";
     }
     .unlucktext {
         text-align: left;
         color: #000000;
-        font: 21px/1em "HanyiSentyTang";
+        font: 20px/1em "HanyiSentyTang";
     }
     .text_group {
         text-align: center;
