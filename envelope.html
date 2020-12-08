@@ -18,7 +18,7 @@
                     max-height="1000px">
             </div>
             <div class="card card__face__abs_in card__face--back card__rotate__face--back">
-                <div class="text_group">
+                <div class="text_group" id="text_group">
                     <p class="lucktext"></p>
                     <p class="unlucktext"></p>
                     <p class="unlucktext"></p>
@@ -57,7 +57,6 @@
             }
         }
         if (!isValid) {
-            document.getElementsByClassName("text_group").className="utext_group"
             document.getElementsByClassName("unlucktext")[0].innerHTML = "很遗憾，";
             document.getElementsByClassName("unlucktext")[1].innerHTML = "您没有成功报名";
             document.getElementsByClassName("unlucktext")[2].innerHTML = "2020Rhapsodia密院冬季舞会。";

@@ -9,6 +9,10 @@ body {
     font: 20px/1.5em "Microsoft YaHei";
     font-size: 15px;
 }
+@font-face {
+    font-family: HanyiSentyTang;
+    src: url("../font/mini.ttf");
+}
 .open_card{
     width: 500px;
     perspective: 2000px;
@@ -22,22 +26,7 @@ body {
 .imgcard{
     width: 500px
 }
-@media(max-width: 900px)
-{
-    .imgcard{
-        width: 700px;
-    }
-}
-@media(max-width: 750px)
-{
-    .imgcard{
-        width: 500px;
-    }
-}
-@font-face {
-    font-family: HanyiSentyTang;
-    src: url("../font/mini.ttf");
-}
+
 .card__face__abs {
     position: absolute;
     height: 100%;
@@ -121,4 +110,38 @@ body {
     z-index: 1;
     animation-fill-mode: forwards;
     transform-style: preserve-3d;
+}
+@media(max-width: 900px)
+{
+    .imgcard{
+        width: 700px;
+    }
+
+}
+@media(max-width: 750px)
+{
+    .imgcard{
+        width: 500px;
+    }
+    .lucktext {
+        text-align: left;
+        color: #000000;
+        font: 20px/1em "HanyiSentyTang";
+    }
+    .unlucktext {
+        text-align: left;
+        color: #000000;
+        font: 20px/1em "HanyiSentyTang";
+    }
+    .text_group {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 85%;
+        text-indent:2em
+    }
 }
