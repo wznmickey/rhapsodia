@@ -124,13 +124,13 @@ body {
     .unlucktext {
         text-align: left;
         color: #000000;
-        font: 20.5px/1em "HanyiSentyTang";
+        font: 19px/1em "HanyiSentyTang";
     }
     .text_group {
         text-align: center;
         position: absolute;
         top: 50%;
-        left: 60%;
+        left: 62.5%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -151,13 +151,13 @@ body {
     .unlucktext {
         text-align: left;
         color: #000000;
-        font: 20.5px/1em "HanyiSentyTang";
+        font: 19px/1em "HanyiSentyTang";
     }
     .text_group {
         text-align: center;
         position: absolute;
         top: 50%;
-        left: 60%;
+        left: 62.5%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
