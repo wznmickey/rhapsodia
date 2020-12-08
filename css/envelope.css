@@ -178,7 +178,7 @@ body {
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: 55%;
+        width: 50%;
         text-indent:2em
     }
 }
@@ -232,7 +232,7 @@ body {
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: 55%;
+        width: 50%;
         text-indent:2em
     }
 }
