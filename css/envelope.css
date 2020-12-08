@@ -60,12 +60,15 @@ body {
     height: 140px;
     perspective: 500px;
 }
-
-.text {
+.lucktext {
     text-align: left;
     color: #000000;
     font: 30px/1em "HanyiSentyTang";
-
+}
+.unlucktext {
+    text-align: left;
+    color: #000000;
+    font: 28px/1em "HanyiSentyTang";
 }
 .vcenter {
     text-align: center;
