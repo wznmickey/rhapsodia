@@ -18,7 +18,7 @@
                     max-height="1000px">
             </div>
             <div class="card card__face__abs_in card__face--back card__rotate__face--back">
-                <div class="text_group" id="text_group">
+                <div class="ltextgroup">
                     <p class="lucktext"></p>
                     <p class="lucktext"></p>
                     <p class="lucktext"></p>
@@ -26,6 +26,9 @@
                     <p class="lucktext"></p>
                     <p class="lucktext"></p>
                     <p class="lucktext"></p>
+                </div>
+                <div class="textgroup" id="text_group">
+
                     <p class="unlucktext"></p>
                     <p class="unlucktext"></p>
                     <p class="unlucktext"></p>
@@ -43,6 +46,9 @@
         var isValid = false;
         for (var i = 0; i < DATA.length; ++i) {
             if (DATA[i]["phone number"] === hashnum) {
+                //document.getElementsByClassName("text_group").style.width="50%";
+                //document.getElementsByClassName("text_group").style.left="50%";
+                document.getElementsByClassName("textgroup").className = "ltextgroup";
                 document.getElementsByClassName("lucktext")[0].innerHTML = "亲爱的" + DATA[i]["name"] + "同学：";
                 document.getElementsByClassName("lucktext")[1].innerHTML += "\n 诚挚地邀请您出席2020年Rhapsodia冬季舞会。您的编号是：" + DATA[i]["number"];
                 document.getElementsByClassName("lucktext")[2].innerHTML += "\n 主办方：上海交通大学密西根学院学生会";
