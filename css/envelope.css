@@ -33,41 +33,49 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 .card__face__abs_in {
     height: 100%;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 .card__rotate__face--back {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 .cardpage.is-fliped {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg)
 }
 .wrapper--card {
     width: 100px;
     height: 140px;
+    -webkit-perspective: 500px;
     perspective: 500px;
 }
 .lucktext {
+    -webkit-text-align: left;
     text-align: left;
     color: #000000;
     font: 22px/1em "HanyiSentyTang";
 }
 .unlucktext {
+    -webkit-text-align: left;
     text-align: left;
     color: #000000;
     font: 30px/1em "HanyiSentyTang";
 }
 .nolucktext {
+    -webkit-text-align: left;
     text-align: left;
     color: #000000;
     font: 30px/1em "HanyiSentyTang";
 }
 .vcenter {
+    -webkit-text-align: center;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -77,6 +85,7 @@ body {
     transform: translate(-50%, -50%);
 }
 .textgroup {
+    -webkit-text-align: center;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -115,8 +124,11 @@ body {
     height: 280px;
     /* margin: 200px 0 0; */
     background: rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.25);
+    -webkit-position: center;
     position: center;
+    -webkit-perspective: 800px;
     perspective: 800px;
 }
 
@@ -129,7 +141,9 @@ body {
     background: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
     z-index: 1;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 @media(max-width: 750px)
