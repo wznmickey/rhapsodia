@@ -55,22 +55,22 @@
             if (DATA[i]["phone number"] === hashnum) {
                 //document.getElementsByClassName("text_group").style.width="50%";
                 //document.getElementsByClassName("text_group").style.left="50%";
-                if (DATA[i]["number"] <= 128) {
+                if (DATA[i]["number"] <= 128 || DATA[i]["number"]==148|| DATA[i]["number"]==257 || DATA[i]["number"]==256) {
                     document.getElementsByClassName("lucktext")[0].innerHTML = "亲爱的" + DATA[i]["name"] + "同学：";
                     document.getElementsByClassName("lucktext")[1].innerHTML += "\n 诚挚地邀请您出席2020年Rhapsodia冬季舞会。您的编号是：" + DATA[i]["number"];
                     document.getElementsByClassName("lucktext")[2].innerHTML += "\n 主办方：上海交通大学密西根学院学生会";
                     document.getElementsByClassName("lucktext")[3].innerHTML += "\n 时间：2020年12月13日";
                     document.getElementsByClassName("lucktext")[4].innerHTML += "\n 地点：上海市普陀区泸定路46号嘉庭俱乐部内";
-                    if (DATA[i]["number"] <= 43) {
+                    if (DATA[i]["number"] <= 43 DATA[i]["number"]==148) {
                         document.getElementsByClassName("lucktext")[5].innerHTML += "\n您的大巴上车时间：12月13日15:45分";
                     }
-                    if (DATA[i]["number"] >= 44 && DATA[i]["number"] <= 86) {
+                    if (DATA[i]["number"] >= 44 && DATA[i]["number"] <= 86 || DATA[i]["number"]==257) {
                         document.getElementsByClassName("lucktext")[5].innerHTML += "\n您的大巴上车时间：12月13日16:00分";
                     }
-                    if (DATA[i]["number"] >= 87 && DATA[i]["number"] <= 128) {
+                    if (DATA[i]["number"] >= 87 && DATA[i]["number"] <= 128 || DATA[i]["number"]==256)  {
                         document.getElementsByClassName("lucktext")[5].innerHTML += "\n您的大巴上车时间：12月13日16:15分";
                     }
-                    if (DATA[i]["number"] <= 128) { document.getElementsByClassName("lucktext")[6].innerHTML += "\n上车地点：东20寝室楼东侧(植物园西侧)学森路"; }
+                    document.getElementsByClassName("lucktext")[6].innerHTML += "\n上车地点：东20寝室楼东侧(植物园西侧)学森路"; 
                 }
                 else {
                     document.getElementsByClassName("nolucktext")[0].innerHTML = "亲爱的" + DATA[i]["name"] + "同学：";
