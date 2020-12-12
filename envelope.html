@@ -55,7 +55,7 @@
             if (DATA[i]["phone number"] === hashnum) {
                 //document.getElementsByClassName("text_group").style.width="50%";
                 //document.getElementsByClassName("text_group").style.left="50%";
-                if (DATA[i]["number"] <= 128 || DATA[i]["number"]==148|| DATA[i]["number"]==257 || DATA[i]["number"]==256) {
+                if (DATA[i]["number"] <= 128 || DATA[i]["number"]==148|| DATA[i]["number"]==257 || DATA[i]["number"]==256 || DATA[i]["number"]==258 ) {
                     document.getElementsByClassName("lucktext")[0].innerHTML = "亲爱的" + DATA[i]["name"] + "同学：";
                     document.getElementsByClassName("lucktext")[1].innerHTML += "\n 诚挚地邀请您出席2020年Rhapsodia冬季舞会。您的编号是：" + DATA[i]["number"];
                     document.getElementsByClassName("lucktext")[2].innerHTML += "\n 主办方：上海交通大学密西根学院学生会";
@@ -67,7 +67,7 @@
                     if (DATA[i]["number"] >= 44 && DATA[i]["number"] <= 86 || DATA[i]["number"]==257) {
                         document.getElementsByClassName("lucktext")[5].innerHTML += "\n您的大巴上车时间：12月13日16:00分";
                     }
-                    if (DATA[i]["number"] >= 87 && DATA[i]["number"] <= 128 || DATA[i]["number"]==256)  {
+                    if (DATA[i]["number"] >= 87 && DATA[i]["number"] <= 128 || DATA[i]["number"]==256 || DATA[i]["number"]==258)  {
                         document.getElementsByClassName("lucktext")[5].innerHTML += "\n您的大巴上车时间：12月13日16:15分";
                     }
                     document.getElementsByClassName("lucktext")[6].innerHTML += "\n上车地点：东20寝室楼东侧(植物园西侧)学森路"; 
